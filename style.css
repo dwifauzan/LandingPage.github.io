@@ -1,0 +1,273 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(./photo/mountainous-landscape-with-fog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+:root{
+    --text-primary: #D0D4CA;
+    --text-secondary: #f7f7f7f7;
+    --bg-primary: #04364A;
+    --bg-secondary: #176B87;
+    --button-primary: #61677A;
+    --button-secondary: #D8D9DA;
+}
+
+.nav-container{
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+
+    border-bottom: var(--text-primary);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .8);
+}
+
+.textlogo{
+    padding-left: 1em;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.nav-menu a{
+    margin: 1em;
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+.nav-menu a:hover{
+    /* padding: 1vh; */
+    border-bottom: 2px solid var(--text-primary);
+    transition: .5s ease-in-out;
+}
+
+.pembawakata{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--text-secondary);
+}
+
+.pembawakata p{
+    font-size: 2em;
+    font-family: 'Gabarito', sans-serif;
+}
+
+/* main */
+main{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.history{
+    margin-top: 35vh;
+    width: 85%;
+    padding-top: 10vh;
+    text-align: center;
+    color: var(--text-secondary);
+    border-bottom: 3px solid var(--text-primary);
+}
+
+.history h1{
+    font-family: 'Gabarito', sans-serif;
+}
+
+.history p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.history img{
+    border-radius: 2em;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.wrapper{
+    padding-top: 12vh;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper h1{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Gabarito', sans-serif;
+    margin-bottom: 3vh;
+    color: var(--text-secondary);
+}
+
+.culinary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 3px solid var(--text-primary);
+    padding-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.culinary h2{
+    font-family: 'Gabarito', sans-serif;
+}
+
+.card{
+    width: 35%;
+    padding-top: 2vh;
+    padding: 3vh;
+    margin: 10px;
+
+    background-color: var(--bg-secondary);
+    border-radius: 13px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.card:hover{
+    transition: .6s;
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 50%;
+    border-radius: 2em;
+}
+
+.kolum1{
+    text-align: center;
+    font-size: 1em;
+}
+
+.kolum1 h2{
+    font-family: 'Gabarito', sans-serif;
+}
+
+.btn{
+    border: none;
+    border-radius: 2em;
+    width: 20%;
+    height: 5vh;
+    background-color: var(--button-primary);
+    color: black;
+}
+
+.btn a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:hover{
+    background-color: var(--button-secondary);
+    transition: .6s ease-in-out;
+}
+
+.con{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Gabarito', sans-serif;
+    margin-bottom: 3vh;
+    color: var(--text-secondary);
+}
+
+.excursion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    width: 80%;
+    margin-top: 8vh;
+    background-color: var(--bg-secondary);
+    border-radius: 13px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+    padding: 3vh;
+}
+
+.box:hover{
+    transition: .6s;
+    transform: scale(1.1);
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.keterangan{
+    padding: 2vh;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    margin-top: 15vh;
+    width: 100%;
+    height: 23vh;
+    background-color: var(--text-primary);
+}
+
+footer .end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.icons{
+    font-size: 2.5em;
+}
+
+@media screen and (max-width: 630px) {
+    .card{
+        width: 80%;
+    }
+    .box img{
+        width: 60%;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .nav-menu{
+        display: none;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box img{
+        width: 100%;
+    }
+}
